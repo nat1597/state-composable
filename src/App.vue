@@ -20,9 +20,9 @@
   <div class="picker-container">
     <colorPicker @color-change="handleLocalSquare" />
     <colorPicker @color-change="handleGlobalSquare" />
-    Local Color | {{ localColor }}
+    Local Color
     <squareSelect :color="localColor" />
-    Global Color | {{ globalColor }}
+    Global Color
     <squareSelect :color="globalColor" />
 
     <someChild />
@@ -55,6 +55,6 @@ body {
 }
 
 .picker-container > div {
-    margin: 10px;
+    margin: 10px auto;
 }
 </style>

@@ -1,6 +1,6 @@
 <script setup lang="js">
   import { useColors } from '@/composables/useColor'
-  const { globalColor, localColor, updateLocalColor, updateGlobalColor } = useColors();
+  const { globalColor, localColor } = useColors();
 
 </script>
 

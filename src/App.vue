@@ -18,13 +18,14 @@
 
 <template>
   <div class="picker-container">
+    <span>Local Picker</span>
     <colorPicker @color-change="handleLocalSquare" />
+    <span>Global Picker</span>
     <colorPicker @color-change="handleGlobalSquare" />
-    Local Color
+    <span>Local Color</span>
     <squareSelect :color="localColor" />
-    Global Color
+    <span>Global Color</span>
     <squareSelect :color="globalColor" />
-
     <someChild />
   </div>
 </template>
@@ -36,7 +37,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #a4a4a4;
+  color: #eeeeee;
   margin-top: 60px;
   height: 100vh;
 }
@@ -55,6 +56,10 @@ body {
 }
 
 .picker-container > div {
-    margin: 10px auto;
+  margin: 10px auto;
+}
+
+.picker-container > span {
+  font-weight: 700;
 }
 </style>

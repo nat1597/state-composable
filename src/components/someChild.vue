@@ -5,13 +5,28 @@
 </script>
 
 <template>
-   <div><span style="font-weight: 700;">Local state</span> - {{ localColor }} // does not update once instantiated (not global)</div>
-   <div><span style="font-weight: 700;">Global state</span> - {{ globalColor }} // updates globally bc it is out of useColors state scope</div>
+   <div class="square-child">
+     <div :style="`background: ${localColor}`"></div>
+     <span style="font-weight: 700;">Local state</span>// (not global) does not update once instantiated bc 'localColor' is defined within useColors state scope
+  </div>
+   <div class="square-child">
+     <div :style="`background: ${globalColor}`"></div>
+    <span style="font-weight: 700;">Global state</span> // updates globally bc 'globalColor' is defined outside of useColors state scope
+  </div>
 </template>
 
 <style>
-  .square{
-    height: 10em;
-    width: 10em;
+  .square-child{
+    display: flex;
+  }
+  
+  .square-child > div{
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0 10px 0 0;
+  }
+
+  .square-child > span{
+    margin: 0 10px 0 0;
   }
 </style>

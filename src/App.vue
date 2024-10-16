@@ -20,11 +20,9 @@
   <div class="picker-container">
     <span>Local Picker</span>
     <colorPicker @color-change="handleLocalSquare" />
+    <squareSelect :color="localColor" />
     <span>Global Picker</span>
     <colorPicker @color-change="handleGlobalSquare" />
-    <span>Local Color</span>
-    <squareSelect :color="localColor" />
-    <span>Global Color</span>
     <squareSelect :color="globalColor" />
     <someChild />
   </div>

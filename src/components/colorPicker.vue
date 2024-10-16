@@ -35,15 +35,15 @@ const { colorList, switchColor } = useColors();
   gap: 2rem;
   width: fit-content;
   background: #fff;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   margin-inline: auto;
   border-radius: 1rem;
 }
 
 .color-picker input[type="radio"] {
   appearance: none;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   outline: 3px solid var(--radio-color, currentColor);
   outline-offset: 3px;
   border-radius: 50%;
